@@ -180,7 +180,12 @@ yarn add --dev babel-plugin-transform-pipeline
 
 ```json
 {
-  "plugins": ["transform-pipeline"]
+    "parserOpts": {
+        "parser": "@airdwing/babylon"
+    },
+    "plugins": [
+        "transform-pipeline"
+    ]
 }
 ```
 
